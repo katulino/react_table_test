@@ -9,6 +9,11 @@ body {
   font-family: arial, sans-serif;
 }
 
+.tabulka_blok {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
 #table {
   text-align: center;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;

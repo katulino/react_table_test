@@ -60,7 +60,8 @@ export default class NewUserForm extends Component {
             if (item != "ID"){
                formular.push(<UserInput name={item} label={item}
                                    value={this.state.vstup[i]}
-                                   onChange={this.handleChangeEdit[i]}/>)
+                                   onChange={this.handleChangeEdit[i]}/>,<br/>)
+
                }
             i++
             }

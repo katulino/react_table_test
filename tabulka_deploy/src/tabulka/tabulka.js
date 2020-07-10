@@ -18,17 +18,19 @@ export default class Tabulka extends Component {
     		console.log(`pisuVtabulce ${this.props.hlavicka}`);
 
     return (
-    	<div className="tabulka blok">
-    		<h1 id='title'></h1>   		
+    	<div className="tabulka_blok">
+    		<h1 id='title'></h1>
+                         <button onClick={() =>this.props.formFunkce()} >{popisek}</button>
+				{this.formPridat}
     			<table id = 'table'>
+
     				<HlavickaTabulky vstup={this.props.hlavicka} />
     				<TeloTabulky vstup={this.props.telo}
     				             smazat={this.props.smazat}
         				     editovat = {this.props.editFunkce}
         				     />
     			</table>
-    			<button onClick={() =>this.props.formFunkce()} >{popisek}</button>
-				{this.formPridat}
+
     	</div>       
   		);
   		}  
